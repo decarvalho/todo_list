@@ -1,0 +1,10 @@
+Bundler/OrderedGems:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Layout/HashAlignment:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
