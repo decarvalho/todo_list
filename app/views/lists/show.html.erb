@@ -1,0 +1,16 @@
+<h1><%= @list.title %></h1>
+
+<ul>
+<% @list.items.each do |item| %>
+  <li> <%= item.body %> </li>
+<% end %>
+</ul>
+
+<ul>
+  <li><%= link_to "voltar", lists_path %></li>
+  <li><%= link_to "editar", edit_list_path(@list) %></li>
+  <li><%= link_to "deletar", list_path(@list), method: :delete %></li>
+</ul>
+
+<b>Adicionando items para fazer:</b>
+<%= render 'items/form' %>
