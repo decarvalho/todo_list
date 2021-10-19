@@ -4,6 +4,7 @@
   <% @lists.each do |list| %>
     <li>
       <%= link_to list.title, list %>
+      <%= list.items_count %>
     </li>
   <% end %>
 </ul>

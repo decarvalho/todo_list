@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_19_004827) do
+ActiveRecord::Schema.define(version: 2021_10_19_131648) do
 
   create_table "items", force: :cascade do |t|
     t.text "body"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_10_19_004827) do
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "items_count"
   end
 
   add_foreign_key "items", "lists"
